@@ -1,0 +1,189 @@
+label .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+label .title a::before {
+    content: '';
+    background: url('https://sweetpproductions.com/gfx/sweetp_logo_dark.png') no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin: 6px 5px 0 0;
+}
+
+label .sweetp-hamburger-menu {
+    position: fixed;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #f5f5f5;
+    border-radius: 50% 50% 50% 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #f5f5f5, 0 0 0 0 #f5f5f5;
+    cursor: pointer;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.sweetp-hamburger-menu {
+    box-shadow: 0 0 0 100vw #f5f5f5, 0 0 0 100vh #f5f5f5;
+    border-radius: 0;
+}
+
+label input:checked+.sweetp-hamburger-menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+label input:checked+.sweetp-hamburger-menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked+.sweetp-hamburger-menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked+.sweetp-hamburger-menu+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .25s 0s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+}
+
+label a,
+label a:hover,
+label a:visited {
+    margin-bottom: 1em;
+    display: block;
+    color: #474747 !important;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#bitcoin_social {
+    height: 30px;
+    margin: 20px 0 0 0;
+    display: inline-block;
+}
+
+#bitcoin_social a {
+    display: inline-block;
+}
+
+#bitcoin_social img {
+    height: 30px;
+    width: 30px;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+#bitcoin_social img:first-child {
+    margin-right: 10px;
+}
+
+#bitcoin_social img:last-child {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 414px) {
+    label .title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    label .title a {
+        font-size: 24px !important;
+    }
+
+    label .title a::before {
+        width: 19px;
+        height: 24px;
+        display: block;
+        float: left;
+        margin: 5px 4px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    label .title a {
+        font-size: 20px !important;
+    }
+
+    label .title a::before {
+        width: 16px;
+        height: 20px;
+        display: block;
+        float: left;
+        margin: 4px 3px 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    label .title a {
+        font-size: 15px !important;
+    }
+
+    label .title a::before {
+        width: 12px;
+        height: 15px;
+        display: block;
+        float: left;
+        margin: 3px 2px 0 0;
+    }
+}

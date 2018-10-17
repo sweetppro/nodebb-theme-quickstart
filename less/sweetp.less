@@ -53,12 +53,8 @@ body {
     margin-bottom: 2em;
 }
 
-#bt-menu {
-    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
 /* linkopacity */
-a.link_rev_opacity:hover img:hover {
+a.linkopacity:hover img:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     -moz-opacity: 1.0;
@@ -70,7 +66,7 @@ a.link_rev_opacity:hover img:hover {
     -o-transition: opacity 0.5s ease-in-out;
 }
 
-a.link_rev_opacity img {
+a.linkopacity img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     filter: alpha(opacity=40);
     -moz-opacity: 0.4;
@@ -82,109 +78,6 @@ a.link_rev_opacity img {
     -o-transition: opacity 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
-
-    #panel,
-    .navbar {
-        margin-top: 42px !important;
-    }
-
-    /* menu */
-    .bt-menu {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 43px;
-        background-color: #404040;
-        border-bottom: 1px solid #404040;
-        z-index: 2000;
-        font-size: 16px;
-        letter-spacing: .02px;
-    }
-    .bt-menu ul {
-        font-size: 110%;
-    }
-    .bt-overlay {
-        display: none;
-    }
-    .menu_button {
-        display: none;
-    }
-    .bt-menu ul {
-        display: block;
-        text-align: left;
-        line-height: 42px;
-        margin-left: 10px;
-        padding: 0;
-    }
-    .bt-menu ul li {
-        margin-right: 10px;
-        display: inline-block;
-        list-style-type: none;
-        height: 20px;
-        color: #f5f5f5;
-        letter-spacing: 1px;
-        font-size: 1em;
-        -webkit-transition: color 0.2s;
-        transition: color 0.2s;
-        font-weight: normal;
-        vertical-align: top;
-    }
-    .bt-menu ul li.title a,
-    .bt-menu ul li.title a:visited {
-        color: #f5f5f5 !important;
-        font-size: 20px !important;
-        font-weight: bold;
-        margin-right: 20px;
-        -webkit-font-smoothing: subpixel-antialiased;
-        letter-spacing: 0.1px;
-    }
-    .bt-menu ul li.title a::before {
-        content: '';
-        background: url('https://sweetpproductions.com/gfx/sweetp_logo.png') no-repeat;
-        background-size: 100% 100%;
-        width: 24px;
-        height: 30px;
-        display: block;
-        float: left;
-        margin: 6px 5px 0 0;
-    }
-    .bt-menu ul li a,
-    .bt-menu ul li a:visited {
-        display: block;
-        outline: none;
-        text-decoration: none;
-        font-weight: normal;
-        color: #aaa !important;
-    }
-    .bt-menu ul li a:hover,
-    .bt-menu ul li a:focus,
-    .bt-menu ul li a:hover:before,
-    .bt-menu ul li a:focus:before {
-        color: #f5f5f5 !important;
-        text-decoration: none;
-    }
-    #bitcoin_social {
-        width: 130px;
-        height: 42px;
-        float: right;
-        margin-right: 10px;
-    }
-    #bitcoin_social a {
-        padding: 0 !important;
-        float: right;
-    }
-    #bitcoin_social img {
-        height: 30px;
-        width: 30px;
-        padding: 0 !important;
-        display: inline-block;
-        margin-left: 5px;
-        margin-top: 6px;
-        vertical-align: top;
-    }
-}
-
 @media screen and (max-width: 767px) {
     #sweetp-main {
         padding-bottom: 100px !important;
@@ -194,27 +87,6 @@ a.link_rev_opacity img {
         margin-top: -100px;
         /* negative value of footer height */
         height: 100px;
-    }
-    .bt-menu {
-        display: none !important;
-    }
-    #bitcoin_social {
-        width: 100%;
-        height: 35px;
-        float: right;
-        position: absolute;
-        margin-top: 50px;
-    }
-    #bitcoin_social a {
-        padding: 0 !important;
-        float: left;
-    }
-    #bitcoin_social img {
-        height: 30px;
-        width: 30px;
-        padding: 0 !important;
-        display: inline-block;
-        margin-left: 5px;
     }
 }
 

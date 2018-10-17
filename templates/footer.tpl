@@ -40,37 +40,40 @@
 		</div>
 	</div>
 	<div id="sweetp-footer"></div>
-	<nav id="bt-menu" class="bt-menu">
-		<div class="menu_button">
-			<a href="#" class="bt-menu-trigger">
-				<span>Menu</span>
-			</a>
-		</div>
-		<ul>
-			<li class="title">
-				<a href="https://sweetpproductions.com">SweetP Productions</a>
-			</li>
-			<li>
-				<a href="https://sweetpproductions.com">Products</a>
-			</li>
-			<li>
-				<a href="https://sweetpproductions.com/store/">Store</a>
-			</li>
-			<li>
-				<a href="https://sweetpproductions.com/support/">Support</a>
-			</li>
-			<li>
-				<a href="https://sweetpproductions.com/blog/">Blog</a>
-			</li>
-			<li>
-				<a href="https://sweetpproductions.com/contact/contact.htm">Contact</a>
-			</li>
-			<li id="bitcoin_social">
-				<a class="link_rev_opacity" href="https://twitter.com/SweetP_Pro" target="_blank">
-					<img src="https://sweetpproductions.com/gfx/other/twitter.png" title="Follow SweetP Productions on Twitter" />
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<label>
+			<span class="title"><a href="/">SweetP Productions</a></span>
+			<input type='checkbox'>
+			<span class='sweetp-hamburger-menu'>
+				<span class='hamburger'></span>
+			</span>
+			<ul>
+				<li>
+					<a href="/">Products</a>
+				</li>
+				<li>
+					<a href="store/">Store</a>
+				</li>
+				<li>
+					<a href="support/">Support</a>
+				</li>
+				<li>
+					<a href="blog/">Blog</a>
+				</li>
+				<li>
+					<a href="contact/contact.htm">Contact</a>
+				</li>
+				<li id="bitcoin_social">
+					<a class="linkopacity" href="https://twitter.com/SweetP_Pro" target="_blank">
+						<img src="gfx/other/twitter.png" title="Follow SweetP Productions on Twitter" />
+					</a>
+					<a class="linkopacity" href="#crypto_coin">
+						<img src="gfx/payments/ethereum_button.png" alt="We accept Ethereum!" title="We accept Ethereum!" />
+					</a>
+					<a class="linkopacity" href="#crypto_coin">
+						<img src="gfx/payments/bitcoin_button.png" alt="We accept Bitcoin!" title="We accept Bitcoin!" />
+					</a>
+				</li>
+			</ul>
+		</label>
 </body>
 </html>
