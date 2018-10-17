@@ -67,7 +67,7 @@
 			</li>
 			<li id="bitcoin_social">
 				<a class="link_rev_opacity" href="https://twitter.com/SweetP_Pro" target="_blank">
-					<img src="gfx/other/twitter.png" title="Follow SweetP Productions on Twitter" />
+					<img src="https://sweetpproductions.com/gfx/other/twitter.png" title="Follow SweetP Productions on Twitter" />
 				</a>
 			</li>
 		</ul>

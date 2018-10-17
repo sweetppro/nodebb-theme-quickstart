@@ -1,3 +1,7 @@
+body {
+    height: 100%
+}
+
 #sweetp-wrapper {
     min-height: 100%;
     background: #fff;
@@ -19,6 +23,8 @@
     font-size: 12px;
     background-color: #d3d3d3;
     padding: 15px;
+    color: #474747;
+    font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 #sweetp-footer ul li {
@@ -32,11 +38,28 @@
     margin-bottom: 0;
 }
 
+#sweetp-footer a:link,
+#sweetp-footer a:visited {
+    background: inherit;
+    color: #429c46;
+    text-decoration: none;
+}
+
 #sweetp-footer ul li:last-child {
     margin-bottom: 2em;
 }
 
+#bt-menu {
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 @media screen and (min-width: 766px) {
+
+    #panel,
+    .navbar {
+        margin-top: 42px !important;
+    }
+
     /* menu */
     .bt-menu {
         position: fixed;
@@ -58,6 +81,7 @@
         text-align: left;
         line-height: 42px;
         margin-left: 10px;
+        padding: 0;
     }
     .bt-menu ul li {
         margin-right: 10px;
@@ -83,7 +107,7 @@
     }
     .bt-menu ul li.title a::before {
         content: '';
-        background: url('../gfx/sweetp_logo.png') no-repeat;
+        background: url('https://sweetpproductions.com/gfx/sweetp_logo.png') no-repeat;
         background-size: 100% 100%;
         width: 24px;
         height: 30px;
@@ -96,7 +120,7 @@
         display: block;
         outline: none;
         text-decoration: none;
-        font-size: 1em !important;
+        font-size: 18px !important;
         font-weight: normal;
         color: #aaa !important;
     }
