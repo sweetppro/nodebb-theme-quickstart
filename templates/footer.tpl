@@ -66,12 +66,6 @@
 					<a class="linkopacity" href="https://twitter.com/SweetP_Pro" target="_blank">
 						<img src="gfx/other/twitter.png" title="Follow SweetP Productions on Twitter" />
 					</a>
-					<a class="linkopacity" href="#crypto_coin">
-						<img src="gfx/payments/ethereum_button.png" alt="We accept Ethereum!" title="We accept Ethereum!" />
-					</a>
-					<a class="linkopacity" href="#crypto_coin">
-						<img src="gfx/payments/bitcoin_button.png" alt="We accept Bitcoin!" title="We accept Bitcoin!" />
-					</a>
 				</li>
 			</ul>
 		</label>
