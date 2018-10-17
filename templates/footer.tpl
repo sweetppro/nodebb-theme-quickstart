@@ -48,22 +48,22 @@
 		</div>
 		<ul>
 			<li class="title">
-				<a href="/">SweetP Productions</a>
+				<a href="https://sweetpproductions.com">SweetP Productions</a>
 			</li>
 			<li>
-				<a href="/">Products</a>
+				<a href="https://sweetpproductions.com">Products</a>
 			</li>
 			<li>
-				<a href="store/">Store</a>
+				<a href="https://sweetpproductions.com/store/">Store</a>
 			</li>
 			<li>
-				<a href="support/">Support</a>
+				<a href="https://sweetpproductions.com/support/">Support</a>
 			</li>
 			<li>
-				<a href="blog/">Blog</a>
+				<a href="https://sweetpproductions.com/blog/">Blog</a>
 			</li>
 			<li>
-				<a href="contact/contact.htm">Contact</a>
+				<a href="https://sweetpproductions.com/contact/contact.htm">Contact</a>
 			</li>
 			<li id="bitcoin_social">
 				<a class="link_rev_opacity" href="https://twitter.com/SweetP_Pro" target="_blank">
