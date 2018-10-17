@@ -1,0 +1,407 @@
+#sweetp-wrapper {
+    min-height: 100%;
+    background: #fff;
+}
+
+#sweetp-main {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+#sweetp-footer {
+    position: relative;
+    margin-top: -50px;
+    /* negative value of footer height */
+    height: 50px;
+    clear: both;
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+    background-color: #d3d3d3;
+    padding: 15px;
+}
+
+#sweetp-footer ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    text-align: left;
+}
+
+#sweetp-footer p {
+    margin-bottom: 0;
+}
+
+#sweetp-footer ul li:last-child {
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 766px) {
+    /* menu */
+    .bt-menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 42px;
+        background-color: #404040;
+        border-bottom: 1px solid #404040;
+        z-index: 2000;
+    }
+    .bt-overlay {
+        display: none;
+    }
+    .menu_button {
+        display: none;
+    }
+    .bt-menu ul {
+        display: block;
+        text-align: left;
+        line-height: 42px;
+        margin-left: 10px;
+    }
+    .bt-menu ul li {
+        margin-right: 10px;
+        display: inline-block;
+        list-style-type: none;
+        height: 20px;
+        color: #f5f5f5;
+        letter-spacing: 1px;
+        font-size: 1em;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+        font-weight: normal;
+        vertical-align: top;
+    }
+    .bt-menu ul li.title a,
+    .bt-menu ul li.title a:visited {
+        color: #f5f5f5 !important;
+        font-size: 20px !important;
+        font-weight: bold;
+        margin-right: 20px;
+        -webkit-font-smoothing: subpixel-antialiased;
+        letter-spacing: 0.1px;
+    }
+    .bt-menu ul li.title a::before {
+        content: '';
+        background: url('../gfx/sweetp_logo.png') no-repeat;
+        background-size: 100% 100%;
+        width: 24px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 6px 5px 0 0;
+    }
+    .bt-menu ul li a,
+    .bt-menu ul li a:visited {
+        display: block;
+        outline: none;
+        text-decoration: none;
+        font-size: 1em !important;
+        font-weight: normal;
+        color: #aaa !important;
+    }
+    .bt-menu ul li a:hover,
+    .bt-menu ul li a:focus,
+    .bt-menu ul li a:hover:before,
+    .bt-menu ul li a:focus:before {
+        color: #f5f5f5 !important;
+        text-decoration: none;
+    }
+    #bitcoin_social {
+        width: 130px;
+        height: 42px;
+        float: right;
+        margin-right: 10px;
+    }
+    #bitcoin_social a {
+        padding: 0 !important;
+        float: right;
+    }
+    #bitcoin_social img {
+        height: 30px;
+        width: 30px;
+        padding: 0 !important;
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #sweetp-main {
+        padding-bottom: 100px !important;
+    }
+    #sweetp-footer {
+        position: relative;
+        margin-top: -100px;
+        /* negative value of footer height */
+        height: 100px;
+    }
+    /* menu */
+    .shift {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        -webkit-transition: -webkit-transition 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        filter: blur(3px);
+    }
+    .unshift {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: -webkit-transition 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        filter: blur(0);
+    }
+    .menu_button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: rgba(144, 144, 144, 0.65);
+        width: 100%;
+        height: 40px;
+    }
+    .bt-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-width: 0px;
+        border-style: solid;
+        border-color: #282b33;
+        backface-visibility: hidden;
+        -webkit-transition: border-width 0.5s, background-color 0.5s, height 0s 0.5s;
+        transition: border-width 0.5s, background-color 0.5s, height 0s 0.5s;
+        pointer-events: none;
+    }
+    .bt-menu a,
+    .bt-menu a:visited {
+        color: #ccc;
+    }
+    .bt-menu.bt-menu-open {
+        height: 100%;
+        border-width: 0px 0px 50px 250px;
+        -webkit-transition: border-width 0.5s, background-color 0.5s;
+        transition: border-width 0.5s, background-color 0.5s;
+    }
+    .bt-overlay {
+        display: block;
+        position: absolute;
+        width: 100%;
+        z-index: 2000;
+        background-color: #1f2127;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+        border-left: 1px solid #222;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .bt-menu-open .bt-overlay {
+        height: 100%;
+        opacity: 0.7;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .bt-menu-close .bt-overlay {
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    a.bt-menu-trigger {
+        background: transparent;
+    }
+    .bt-menu-trigger {
+        position: relative;
+        top: 10px;
+        left: 17px;
+        z-index: 100;
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .bt-menu-trigger span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 8%;
+        background-color: #fff;
+        font-size: 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .bt-menu-trigger span:before,
+    .bt-menu-trigger span:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        content: '';
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+    }
+    .bt-menu-trigger span:before {
+        -webkit-transform: translateY(-250%);
+        transform: translateY(-250%);
+    }
+    .bt-menu-trigger span:after {
+        -webkit-transform: translateY(250%);
+        transform: translateY(250%);
+    }
+    .bt-menu-open .bt-menu-trigger span:before {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+    .bt-menu-open .bt-menu-trigger span:after {
+        -webkit-transform: translateY(300%);
+        transform: translateY(300%);
+    }
+    .bt-menu-trigger:after {
+        content: "SweetP Productions";
+        margin: 30px;
+        color: #fff;
+        white-space: nowrap;
+        line-height: 22px;
+        font-size: 18px;
+        font-weight: normal;
+        vertical-align: top;
+    }
+    .bt-menu ul li.title {
+        display: none;
+    }
+    .bt-menu ul {
+        top: 65px;
+        left: 0;
+        position: fixed;
+        font-size: 18px;
+    }
+    .bt-menu ul li,
+    .bt-menu ul li a {
+        display: block;
+    }
+    .bt-menu ul li {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, visibility 0s 0.5s;
+        transition: transform 0.5s, opacity 0.5s, visibility 0s 0.5s;
+    }
+    .bt-menu.bt-menu-open ul li {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s 0.5s;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    .bt-menu.bt-menu-close ul li {
+        visibility: visible;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s 0.5s;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    .bt-menu ul li {
+        width: 250px;
+        -webkit-transform: translate3d(-100%, 50%, 0);
+        transform: translate3d(-100%, 50%, 0);
+        height: 20px;
+        line-height: 20px;
+    }
+    .bt-menu.bt-menu-open ul li {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .bt-menu ul li a,
+    .bt-menu ul li a:visited {
+        display: block;
+        outline: none;
+        text-decoration: none;
+        color: #999;
+    }
+    .bt-menu ul li.title {
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .bt-menu ul li.title a,
+    .bt-menu ul li.title a:visited {
+        color: #f5f5f5;
+    }
+    .bt-menu ul li {
+        padding: 0 20px;
+        color: #f5f5f5;
+        letter-spacing: 1px;
+        font-size: 1.5em;
+        padding-bottom: .7em;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+        font-weight: normal;
+        vertical-align: top;
+    }
+    .bt-menu ul li a:before {
+        color: #f5f5f5;
+        font-size: 24px;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+    }
+    .bt-menu ul li a:hover,
+    .bt-menu ul li a:focus,
+    .bt-menu ul li a:hover:before,
+    .bt-menu ul li a:focus:before {
+        color: #f5f5f5 !important;
+        font-size: 105%
+    }
+    .bt-menu ul li.title a:hover {
+        font-size: 100%;
+    }
+    .bt-menu.bt-menu-close {
+        pointer-events: none;
+    }
+    .bt-menu.bt-menu-open {
+        pointer-events: all;
+    }
+    .bt-menu-trigger {
+        pointer-events: all;
+    }
+    #bitcoin_social {
+        width: 100%;
+        height: 35px;
+        float: right;
+        position: absolute;
+        margin-top: 50px;
+    }
+    #bitcoin_social a {
+        padding: 0 !important;
+        float: left;
+    }
+    #bitcoin_social img {
+        height: 30px;
+        width: 30px;
+        padding: 0 !important;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    ul.extramenunav {
+        font-weight: bolder !important;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #sweetp-footer ul li {
+        text-align: center;
+    }
+    #sweetp-footer ul li:first-child {
+        padding: 0;
+    }
+}
