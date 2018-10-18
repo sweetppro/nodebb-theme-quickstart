@@ -48,16 +48,16 @@
 			</span>
 			<ul>
 				<li>
-					<a href="/">Products</a>
+					<a href="https://sweetpproductions.com">Products</a>
 				</li>
 				<li>
-					<a href="store/">Store</a>
+					<a href="https://sweetpproductions.com/store/">Store</a>
 				</li>
 				<li>
-					<a href="support/">Support</a>
+					<a href="/">Support</a>
 				</li>
 				<li>
-					<a href="blog/">Blog</a>
+					<a href="https://sweetpproductions.com/blog/">Blog</a>
 				</li>
 				<li>
 					<a href="contact/contact.htm">Contact</a>
