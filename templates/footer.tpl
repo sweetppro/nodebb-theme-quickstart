@@ -60,7 +60,7 @@
 					<a href="https://sweetpproductions.com/blog/">Blog</a>
 				</li>
 				<li>
-					<a href="contact/contact.htm">Contact</a>
+					<a href="https://sweetpproductions.com/contact.htm">Contact</a>
 				</li>
 				<li id="bitcoin_social">
 					<a class="linkopacity" href="https://twitter.com/SweetP_Pro" target="_blank">
