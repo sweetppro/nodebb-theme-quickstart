@@ -41,7 +41,7 @@
 	</div>
 	<div id="sweetp-footer"></div>
 	<label>
-			<span class="title"><a href="/">SweetP <span class="light">Productions<span></a></span>
+			<span class="title"><a href="https://sweetpproductions.com">SweetP <span class="light">Productions<span></a></span>
 			<input type='checkbox'>
 			<span class='sweetp-hamburger-menu'>
 				<span class='hamburger'></span>
