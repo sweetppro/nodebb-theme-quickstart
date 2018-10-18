@@ -30,7 +30,7 @@ label .sweetp-hamburger-menu {
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 #f5f5f5, 0 0 0 0 #f5f5f5;
     cursor: pointer;
-    pointer-events: none;
+    pointer-events: all;
 }
 
 label .hamburger {
@@ -72,7 +72,6 @@ label input {
 label input:checked+.sweetp-hamburger-menu {
     box-shadow: 0 0 0 100vw #f5f5f5, 0 0 0 100vh #f5f5f5;
     border-radius: 0;
-    pointer-events: all;
 }
 
 label input:checked+.sweetp-hamburger-menu .hamburger {
@@ -94,6 +93,7 @@ label input:checked+.sweetp-hamburger-menu .hamburger:before {
 
 label input:checked+.sweetp-hamburger-menu+ul {
     opacity: 1;
+    pointer-events: all;
 }
 
 label ul {
@@ -111,7 +111,7 @@ label ul {
     font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
-    pointer-events: all;
+    pointer-events: none;
 }
 
 label a,
@@ -124,6 +124,15 @@ label a:visited {
     font-weight: bold;
     line-height: 30px;
     margin-bottom: 30px;
+}
+
+label ul a,
+label ul a:visited {
+    color: #656565 !important;
+}
+
+label ul a:hover {
+    color: #474747 !important;
 }
 
 #bitcoin_social {
