@@ -54,7 +54,7 @@
 					<a href="https://sweetpproductions.com/store/">Store</a>
 				</li>
 				<li>
-					<a href="/">Support</a>
+					<a href="https://sweetpproductions.com/blog">Support</a>
 				</li>
 				<li>
 					<a href="https://sweetpproductions.com/blog/">Blog</a>
