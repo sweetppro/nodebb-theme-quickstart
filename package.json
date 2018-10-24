@@ -1,18 +1,21 @@
 {
-  "name": "nodebb-theme-sweetp",
-  "version": "0.0.1",
-  "description": "SweetP Productions Support forum NodeBB theme",
-  "main": "theme.less",
-  "keywords": [
+    "id": "10bb86a8f46f42c2e0bb70aaac305d8e",
+    "name": "nodebb-theme-sweetp",
+    "version": "0.1",
+    "description": "SweetP Productions Support forum - NodeBB theme",
+    "main": "theme.less",
+    "url": "https://support.sweetpproductions.com",
+    "screenshot": "screenshot.png",
+    "keywords": [
 
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Russell Gray",
-    "url": "https://sweetpproductions.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
-  }
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Russell Gray",
+        "url": "https://sweetpproductions.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
+    }
 }
