@@ -1,6 +1,6 @@
 {
     "id": "nodebb-theme-sweetp",
-    "name": "Sweetp Forum Theme",
+    "name": "nodebb-theme-sweetp",
     "version": "0.1",
     "description": "SweetP Productions Support forum NodeBB theme to match sweetpproductions.com",
     "main": "theme.less",
