@@ -1,9 +1,8 @@
 {
   "name": "nodebb-theme-sweetp",
-  "version": "0.1",
-  "description": "SweetP Productions Support forum NodeBB theme to match sweetpproductions.com",
+  "version": "0.0.1",
+  "description": "SweetP Productions Support forum NodeBB theme",
   "main": "theme.less",
-  "url": "https://support.sweetpproductions.com",
   "screenshot": "screenshot.png",
   "keywords": [
 
