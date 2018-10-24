@@ -1,8 +1,8 @@
 {
-    "id": "10bb86a8f46f42c2e0bb70aaac305d8e",
-    "name": "nodebb-theme-sweetp",
+    "id": "nodebb-theme-sweetp",
+    "name": "Sweetp Forum Theme",
     "version": "0.1",
-    "description": "SweetP Productions Support forum - NodeBB theme",
+    "description": "SweetP Productions Support forum NodeBB theme to match sweetpproductions.com",
     "main": "theme.less",
     "url": "https://support.sweetpproductions.com",
     "screenshot": "screenshot.png",
