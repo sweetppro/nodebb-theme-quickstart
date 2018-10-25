@@ -4,6 +4,7 @@
   "nbbpm": {
     "compatibility": "^1.10.0"
   },
+  "screenshot": "screenshot.png",
   "description": "SweetP Productions Support forum NodeBB theme",
   "main": "theme.less",
   "keywords": [
