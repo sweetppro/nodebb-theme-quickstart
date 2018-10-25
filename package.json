@@ -1,11 +1,17 @@
 {
   "name": "nodebb-theme-sweetp",
   "version": "0.0.1",
+  "nbbpm": {
+    "compatibility": "^1.10.0"
+  },
   "description": "SweetP Productions Support forum NodeBB theme",
   "main": "theme.less",
-  "screenshot": "screenshot.png",
   "keywords": [
-
+    "nodebb",
+    "theme",
+    "forum",
+    "bootstrap",
+    "responsive"
   ],
   "license": "MIT",
   "author": {
