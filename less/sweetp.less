@@ -1,6 +1,7 @@
 html {
     background-color: #d3d3d3 !important;
 }
+
 body {
     height: 100%;
     background-color: transparent !important;
@@ -61,7 +62,7 @@ body {
     background-color: #d3d3d3;
     padding: 15px;
     color: #474747;
-    font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #sweetp-footer ul li {
@@ -114,12 +115,21 @@ a.linkopacity:hover img {
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
 }
+
 /* end linkopacity */
+@media (max-width: 1199px) {
+    #panel,
+    .slideout-menu,
+    body {
+        -webkit-overflow-scrolling: auto !important;
+    }
+}
 
 @media screen and (max-width: 767px) {
     #sweetp-main {
         padding-bottom: 100px !important;
     }
+
     #sweetp-footer {
         position: relative;
         margin-top: -100px;
@@ -132,6 +142,7 @@ a.linkopacity:hover img {
     #sweetp-footer ul li {
         text-align: center;
     }
+
     #sweetp-footer ul li:first-child {
         padding: 0;
     }
@@ -146,4 +157,4 @@ a.linkopacity:hover img {
     .slideout-menu {
         top: 109px !important;
     }
-} 
+}
