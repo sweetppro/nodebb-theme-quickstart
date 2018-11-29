@@ -1,9 +1,6 @@
 {
   "name": "nodebb-theme-sweetp",
   "version": "0.0.2",
-  "nbbpm": {
-    "compatibility": "^1.11.0"
-  },
   "description": "SweetP Productions Support forum NodeBB theme",
   "main": "theme.less",
   "keywords": [
@@ -21,5 +18,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
+  },
+  "nbbpm": {
+    "compatibility": "^1.11.0"
   }
 }
