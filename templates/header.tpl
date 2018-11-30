@@ -25,19 +25,18 @@
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
 	<div id="sweetp-wrapper">
-		<div id="sweetp-main">
-			<nav id="menu" class="slideout-menu hidden">
-				<!-- IMPORT partials/slideout-menu.tpl -->
-			</nav>
-			<nav id="chats-menu" class="slideout-menu hidden">
-				<!-- IMPORT partials/chats-menu.tpl -->
-			</nav>
+		<nav id="menu" class="slideout-menu hidden">
+			<!-- IMPORT partials/slideout-menu.tpl -->
+		</nav>
+		<nav id="chats-menu" class="slideout-menu hidden">
+			<!-- IMPORT partials/chats-menu.tpl -->
+		</nav>
 
-			<main id="panel" class="slideout-panel">
-				<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-					<div class="container">
-						<!-- IMPORT partials/menu.tpl -->
-					</div>
-				</nav>
-				<div class="container" id="content">
-				<!-- IMPORT partials/noscript/warning.tpl -->
+		<main id="panel" class="slideout-panel">
+			<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+				<div class="container">
+					<!-- IMPORT partials/menu.tpl -->
+				</div>
+			</nav>
+			<div class="container" id="content">
+			<!-- IMPORT partials/noscript/warning.tpl -->
