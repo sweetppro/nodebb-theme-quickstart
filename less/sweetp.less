@@ -124,25 +124,21 @@ a:focus {
 .topic .pagination-block .progress-bar,
 .btn-primary,
 .btn-primary:focus,
+.btn-primary:active,
 .btn-info,
 .btn-info:focus,
-.btn-info[disabled],
-.btn-info[disabled].active,
-.btn-info[disabled].focus
-.btn-primary[disabled],
-.btn-primary[disabled].active
-.btn-primary[disabled].focus {
+.btn-info:active {
     background-color: #428c46 !important;
 }
 
 .btn-primary:hover,
-.btn-info:hover,
-.btn-primary[disabled].hover,
-.btn-info[disabled].hover {
+.btn-info:hover {
     background-color: #327635 !important;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-default,
+.btn-group {
     margin-bottom: 0.5em;
 }
 
@@ -152,6 +148,11 @@ a:focus {
 
 .composer.resizable {
     z-index: 10000;
+}
+
+.checkbox input[type=checkbox]:checked:after, .checkbox-inline input[type=checkbox]:checked:after, input[type=checkbox]:checked:after {
+    background-color: #428c46 !important;
+    border-color: #428c46 !important;
 }
 
 .posts div.content h1,
