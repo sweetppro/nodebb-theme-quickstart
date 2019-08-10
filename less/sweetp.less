@@ -125,13 +125,25 @@ a:focus {
 .btn-primary,
 .btn-primary:focus,
 .btn-info,
-.btn-info:focus {
+.btn-info:focus,
+.btn-info[disabled],
+.btn-info[disabled].active,
+.btn-info[disabled].focus
+.btn-primary[disabled],
+.btn-primary[disabled].active
+.btn-primary[disabled].focus {
     background-color: #428c46 !important;
 }
 
 .btn-primary:hover,
-.btn-info:hover {
+.btn-info:hover,
+.btn-primary[disabled].hover,
+.btn-info[disabled].hover {
     background-color: #327635 !important;
+}
+
+.btn-primary {
+    margin-bottom: 0.5em;
 }
 
 .composer .mobile-navbar {
