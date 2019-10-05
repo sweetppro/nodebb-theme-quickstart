@@ -92,8 +92,11 @@ a:focus {
     padding-left: 10px;
 }
 
-.chat-modal [component="chat/header"] .close [data-action=close],
-.chats-full [component="chat/header"] .close [data-action=close] {
+.chat-modal [component="chat/composer"] [component="chat/input"], .chats-full [component="chat/composer"] [component="chat/input"] {
+    padding-left: 10px;
+}
+
+.chats-full [component="chat/header"] [data-action=close] {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 12vh;
