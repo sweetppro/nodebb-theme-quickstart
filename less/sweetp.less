@@ -87,6 +87,18 @@ a:focus {
     overflow: hidden;
 }
 
+.chat-modal [component="chat/nav-wrapper"] .chat-search input,
+.chats-full [component="chat/nav-wrapper"] .chat-search input {
+    padding-left: 10px;
+}
+
+.chat-modal [component="chat/header"] .close [data-action=close],
+.chats-full [component="chat/header"] .close [data-action=close] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12vh;
+}
+
 #sweetp-wrapper {
     min-height: calc(~"100vh - 100px");
     background: #fff;
@@ -112,7 +124,12 @@ a:focus {
     }
 
     .chat-modal {
-        top: 116px!important;
+        top: 116px !important;
+    }
+
+    .chats-full {
+        margin-bottom: 80px;
+        margin-top: -50px;
     }
 }
 
@@ -150,6 +167,7 @@ a:focus {
 .alert-warning {
     margin-top: 1em;
 }
+
 .topic .pagination-block .wrapper {
     color: #444;
 }
