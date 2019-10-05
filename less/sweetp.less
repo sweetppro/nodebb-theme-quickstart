@@ -61,6 +61,18 @@ a:focus {
     margin-top: 44px;
 }
 
+.chat-modal .modal-body .chat-content {
+    flex: 0.92;
+}
+
+.chat-modal .modal-body {
+    width: 100%;
+}
+
+.chat-modal [component="chat/composer"] [data-action=send] {
+    margin-top: 0;
+}
+
 #sweetp-wrapper {
     min-height: calc(~"100vh - 100px");
     background: #fff;
@@ -83,6 +95,10 @@ a:focus {
 @media (max-width: 991px) {
     #sweetp-footer {
         padding-bottom: 70px;
+    }
+
+    .chat-modal {
+        top: 116px!important;
     }
 }
 
