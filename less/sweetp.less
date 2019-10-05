@@ -61,6 +61,11 @@ a:focus {
     margin-top: 44px;
 }
 
+.chats-full {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
 .chat-modal .modal-body .chat-content {
     flex: 0.92;
 }
@@ -71,6 +76,15 @@ a:focus {
 
 .chat-modal [component="chat/composer"] [data-action=send] {
     margin-top: 0;
+}
+
+.chats-full [component="chat/composer"] [data-action=send] {
+    margin-top: 0;
+    height: initial;
+}
+
+.chats-full [component="chat/nav-wrapper"] {
+    overflow: hidden;
 }
 
 #sweetp-wrapper {
