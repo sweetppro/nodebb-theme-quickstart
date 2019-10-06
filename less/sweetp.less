@@ -127,16 +127,21 @@ a:focus {
     }
 
     .chat-modal {
-        top: 116px !important;
+        padding-top: 116px !important;
+        background-color: #fff;
     }
 
     .chat-modal .modal-body {
-        height: 70% !important;
+        height: 100% !important;
     }
 
     .chats-full {
         margin-bottom: 80px;
         margin-top: -50px;
+    }
+
+    .chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] {
+        padding-bottom: 50px;
     }
 }
 
