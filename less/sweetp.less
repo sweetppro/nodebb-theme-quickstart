@@ -435,9 +435,9 @@ a.linkopacity:hover img {
     .pagination>.active>span,
     .pagination>.active>span:focus,
     .pagination>.active>span:hover {
-        color: #444;
-        background-color: #428c46;
-        border-color: #428c46;
+        color: #f0f0f0;
+        background-color: #444;
+        border-color: #444;
     }
 
     .pagination>.disabled>a,
@@ -453,10 +453,13 @@ a.linkopacity:hover img {
 
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
-    .navbar-default .navbar-nav>.active>a:hover {
+    .navbar-default .navbar-nav>.active>a:hover,
+    .nav>li>a:focus, .nav>li>a:hover,
+    .navbar-default .btn-link:focus, .navbar-default .btn-link:hover,
+    .btn-default {
         color: #f0f0f0;
         background-color: #282828;
-        border-radius: 4px;
+        border-radius: 3px;
     }
 
     .navbar-default .navbar-nav>.open>a,
@@ -464,7 +467,7 @@ a.linkopacity:hover img {
     .navbar-default .navbar-nav>.open>a:hover {
         background-color: #282828;
         color: #f0f0f0;
-        border-radius: 4px 4px 0 0;
+        border-radius: 3px 3px 0 0;
     }
 
     .dropdown-menu {
