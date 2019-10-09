@@ -383,7 +383,7 @@ a.linkopacity:hover img {
 
     input,
     [contenteditable].form-control, [type=email].form-control, [type=password].form-control, [type=tel].form-control, [type=text].form-control, input.form-control, input[type=email], input[type=number], input[type=password], input[type=text], textarea, textarea.form-control {
-        padding-left: 5px;
+        padding-left: 5px !important;
     }
 
     .pagination>li>a,
@@ -411,6 +411,12 @@ a.linkopacity:hover img {
         color: #444;
         background-color: #444;
         border-color: #282828;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: #212121;
+        background-color: #f0f0f0;
+        border-radius: 4px;
     }
 
     #sweetp-footer,
