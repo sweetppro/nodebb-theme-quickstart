@@ -214,3 +214,48 @@ label ul a:hover {
         margin: 3px 2px 0 0;
     }
 }
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+    label .title a::before {
+        content: '';
+        background: url('https://sweetpproductions.com/gfx/sweetp_logo.png') no-repeat;
+        background-size: 100% 100%;
+        width: 24px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 0 5px 0 0;
+        z-index: 9000;
+    }
+
+    label a,
+    label a:hover,
+    label a:visited {
+        color: #e4e4e4 !important;
+    }
+
+    label .sweetp-hamburger-menu {
+        background: #282828;
+        box-shadow: 0 0 0 0 #282828, 0 0 0 0 #282828;
+    }
+
+    label input:checked+.sweetp-hamburger-menu {
+        box-shadow: 0 0 0 100vw #282828, 0 0 0 100vh #282828;
+    }
+
+    label .hamburger,
+    label .hamburger:after,
+    label .hamburger:before {
+        background: #e4e4e4 !important;
+    }
+
+    label ul a,
+    label ul a:visited {
+        color: #b4b4b4 !important;
+    }
+
+    label ul a:hover {
+        color: #e4e4e4 !important;
+    }
+}

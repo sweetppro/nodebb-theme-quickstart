@@ -339,3 +339,23 @@ a.linkopacity:hover img {
         padding: 6px 10px !important;
     }
 }
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body,
+    #panel
+    {
+        background-color: #444;
+        color: #e4e4e4;
+    }
+
+    ::placeholder {
+        color: #a4a4a4;
+    }
+
+    img {
+        filter: grayscale(30%);
+    }
+}
