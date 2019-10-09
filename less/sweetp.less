@@ -360,7 +360,8 @@ a.linkopacity:hover img {
     html,
     body,
     .navbar-default,
-    #sweetp-wrapper {
+    #sweetp-wrapper,
+    composer {
         background-color: #444 !important;
         color: #e4e4e4;
     }
@@ -372,8 +373,14 @@ a.linkopacity:hover img {
     .navbar-default .navbar-nav>.active>a:hover,
     .input-group-addon,
     .navbar-default .btn-link,
-    .dropdown-menu>li>a {
+    .dropdown-menu>li>a,
+    .composer .formatting-bar .formatting-group li {
         color: #e4e4e4;
+    }
+
+    .composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover {
+        background-color: #282828;
+        border-radius: 3px;
     }
 
     ::placeholder {
@@ -400,7 +407,8 @@ a.linkopacity:hover img {
         padding-left: 5px !important;
     }
 
-    .header .chat-list, .slideout-menu .chat-list {
+    .header .chat-list,
+    .slideout-menu .chat-list {
         color: inherit;
     }
 
@@ -411,11 +419,14 @@ a.linkopacity:hover img {
     .chats-list>li {
         border-color: #282828;
     }
-    .header .chat-list>li:not(:last-child), .slideout-menu .chat-list>li:not(:last-child) {
+
+    .header .chat-list>li:not(:last-child),
+    .slideout-menu .chat-list>li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
 
-    .header .chat-list>li:hover, .slideout-menu .chat-list>li:hover {
+    .header .chat-list>li:hover,
+    .slideout-menu .chat-list>li:hover {
         background: #444;
     }
 
@@ -429,7 +440,6 @@ a.linkopacity:hover img {
         border-color: #282828;
     }
 
-    .pagination>.active>a,
     .pagination>.active>a:focus,
     .pagination>.active>a:hover,
     .pagination>.active>span,
@@ -437,7 +447,7 @@ a.linkopacity:hover img {
     .pagination>.active>span:hover {
         color: #f0f0f0;
         background-color: #444;
-        border-color: #444;
+        border-color: #282828;
     }
 
     .pagination>.disabled>a,
@@ -454,10 +464,15 @@ a.linkopacity:hover img {
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus,
     .navbar-default .navbar-nav>.active>a:hover,
-    .nav>li>a:focus, .nav>li>a:hover,
-    .navbar-default .btn-link:focus, .navbar-default .btn-link:hover,
+    .nav>li>a:focus,
+    .nav>li>a:hover,
+    .navbar-default .btn-link:focus,
+    .navbar-default .btn-link:hover,
     .btn-default,
-    .btn-default:focus {
+    .btn-default:focus,
+    .btn-default:active:hover,
+    .btn-default:hover,
+    .btn-default:active:hover, .btn-default:hover {
         color: #f0f0f0;
         background-color: #282828;
         border-radius: 3px;
@@ -466,7 +481,9 @@ a.linkopacity:hover img {
     .navbar-default .navbar-nav>.open>a,
     .navbar-default .navbar-nav>.open>a:focus,
     .navbar-default .navbar-nav>.open>a:hover,
-    .navbar-default .navbar-nav>.open>label, .navbar-default .navbar-nav>.open>label:focus, .navbar-default .navbar-nav>.open>label:hover {
+    .navbar-default .navbar-nav>.open>label,
+    .navbar-default .navbar-nav>.open>label:focus,
+    .navbar-default .navbar-nav>.open>label:hover {
         background-color: #282828;
         color: #f0f0f0;
         border-radius: 3px 3px 0 0;
@@ -477,15 +494,21 @@ a.linkopacity:hover img {
     }
 
     .dropdown-menu>li>a:focus,
-    .dropdown-menu>li>a:hover, 
+    .dropdown-menu>li>a:hover,
     .header .notif-dropdown-link:focus,
     .header .notif-dropdown-link:hover,
-    .dropdown-menu>li>form>.btn-link:focus, .dropdown-menu>li>form>.btn-link:hover, .dropdown-menu>li>form>button:focus, .dropdown-menu>li>form>button:hover {
+    .dropdown-menu>li>form>.btn-link:focus,
+    .dropdown-menu>li>form>.btn-link:hover,
+    .dropdown-menu>li>form>button:focus,
+    .dropdown-menu>li>form>button:hover {
         background-color: #444;
         color: #f0f0f0;
     }
 
-    .dropdown-menu>li>form>.btn-link:focus, .dropdown-menu>li>form>.btn-link:hover, .dropdown-menu>li>form>button:focus, .dropdown-menu>li>form>button:hover {
+    .dropdown-menu>li>form>.btn-link:focus,
+    .dropdown-menu>li>form>.btn-link:hover,
+    .dropdown-menu>li>form>button:focus,
+    .dropdown-menu>li>form>button:hover {
         border-radius: 0 !important;
     }
 
@@ -495,7 +518,8 @@ a.linkopacity:hover img {
 
     #sweetp-footer,
     input,
-    .dropdown-menu>li>form>.btn-link, .dropdown-menu>li>form>button {
+    .dropdown-menu>li>form>.btn-link,
+    .dropdown-menu>li>form>button {
         color: #e4e4e4 !important;
     }
 
