@@ -61,6 +61,10 @@ a:focus {
     margin-top: 44px;
 }
 
+.modal {
+    z-index: 10000;
+}
+
 .chats-full {
     margin-bottom: 50px;
     margin-top: 20px;
@@ -431,7 +435,8 @@ a.linkopacity:hover img {
     input[type=password],
     input[type=text],
     textarea,
-    textarea.form-control {
+    textarea.form-control,
+    .bootstrap-tagsinput {
         padding-left: 5px !important;
     }
 
@@ -459,7 +464,8 @@ a.linkopacity:hover img {
     }
 
     .pagination>li>a,
-    .pagination>li>span {
+    .pagination>li>span,
+    .bootstrap-tagsinput {
         background-color: #282828 !important;
         border-color: #282828 !important;
     }
