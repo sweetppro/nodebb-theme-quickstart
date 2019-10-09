@@ -584,8 +584,8 @@ a.linkopacity:hover img {
     .dropdown-menu>li>form>.btn-link:hover,
     .dropdown-menu>li>form>button:focus,
     .dropdown-menu>li>form>button:hover {
-        background-color: #444;
-        color: #f0f0f0;
+        background-color: #444 !important;
+        color: #f0f0f0 !important;
     }
 
     .dropdown-menu>li>form>.btn-link:focus,
@@ -654,6 +654,12 @@ a.linkopacity:hover img {
         background-color: #282828 !important;
         border-color: #282828 !important;
         color: #f0f0f0 !important;
+    }
+
+    .ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover {
+        border: none !important;
+        background: none !important;
+        color: #e4e4e4 !important;
     }
 
     #sweetp-footer,
