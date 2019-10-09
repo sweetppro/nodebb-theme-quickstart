@@ -92,7 +92,8 @@ a:focus {
     padding-left: 10px;
 }
 
-.chat-modal [component="chat/composer"] [component="chat/input"], .chats-full [component="chat/composer"] [component="chat/input"] {
+.chat-modal [component="chat/composer"] [component="chat/input"],
+.chats-full [component="chat/composer"] [component="chat/input"] {
     padding-left: 10px;
 }
 
@@ -140,7 +141,8 @@ a:focus {
         margin-top: -50px;
     }
 
-    .chat-modal [component="chat/composer"], .chats-full [component="chat/composer"] {
+    .chat-modal [component="chat/composer"],
+    .chats-full [component="chat/composer"] {
         margin-bottom: 50px;
     }
 }
@@ -271,6 +273,18 @@ textarea:focus {
     margin-top: 3em;
 }
 
+.pagination>li>a,
+.pagination>li>span {
+    color: #428c46;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #428c46;
+}
+
 /* linkopacity */
 a.linkopacity img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -346,14 +360,14 @@ a.linkopacity:hover img {
     html,
     body,
     .navbar-default,
-    #sweetp-wrapper
-    {
-        background-color: #444;
+    #sweetp-wrapper {
+        background-color: #444 !important;
         color: #e4e4e4;
     }
 
     .navbar-default .navbar-nav>li>a,
-    .navbar-default .navbar-nav>li>a:hover {
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
         color: #e4e4e4;
     }
 
@@ -365,13 +379,39 @@ a.linkopacity:hover img {
         filter: grayscale(30%);
     }
 
+    input {
+        padding-left: 5px;
+    }
+
+    .pagination>li>a,
+    .pagination>li>span,
+    .pagination>li>a:focus,
+    .pagination>li>a:hover,
+    .pagination>li>span:focus,
+    .pagination>li>span:hover {
+        background-color: #282828;
+        border-color: #282828;
+    }
+
+    .pagination>.active>a,
+    .pagination>.active>a:focus,
+    .pagination>.active>a:hover,
+    .pagination>.active>span,
+    .pagination>.active>span:focus,
+    .pagination>.active>span:hover {
+        color: #444;
+        background-color: #428c46;
+        border-color: #428c46;
+    }
+
     #sweetp-footer,
     input {
         color: #e4e4e4 !important;
     }
 
     #sweetp-footer,
-    input[type="text"] {
+    input[type="text"],
+    .alert-window .alert {
         background-color: #282828 !important;
     }
 }
