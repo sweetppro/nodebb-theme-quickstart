@@ -371,7 +371,8 @@ a.linkopacity:hover img {
     .navbar-default .navbar-nav>.active>a:focus,
     .navbar-default .navbar-nav>.active>a:hover,
     .input-group-addon,
-    .navbar-default .btn-link {
+    .navbar-default .btn-link,
+    .dropdown-menu>li>a {
         color: #e4e4e4;
     }
 
@@ -397,6 +398,25 @@ a.linkopacity:hover img {
     textarea,
     textarea.form-control {
         padding-left: 5px !important;
+    }
+
+    .header .chat-list, .slideout-menu .chat-list {
+        color: inherit;
+    }
+
+    .chats-list {
+        border-top: 1px solid #282828;
+    }
+
+    .chats-list>li {
+        border-color: #282828;
+    }
+    .header .chat-list>li:not(:last-child), .slideout-menu .chat-list>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    .header .chat-list>li:hover, .slideout-menu .chat-list>li:hover {
+        background: #444;
     }
 
     .pagination>li>a,
