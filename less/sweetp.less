@@ -261,7 +261,8 @@ input[type=password]:focus,
 input[type=text]:focus,
 textarea.form-control:focus,
 textarea:focus,
-select.form-control:focus, select:focus {
+select.form-control:focus,
+select:focus {
     box-shadow: inset 0 -2px 0 #428c46 !important;
 }
 
@@ -660,10 +661,14 @@ a.linkopacity:hover img {
         color: #e4e4e4 !important;
     }
 
+    .ui-button:focus,
+    .ui-button:hover,
+    .ui-state-focus,
     .ui-state-hover,
-    .ui-state-active,
-    html .ui-button.ui-state-disabled:active,
-    html .ui-button.ui-state-disabled:hover {
+    .ui-widget-content .ui-state-focus,
+    .ui-widget-content .ui-state-hover,
+    .ui-widget-header .ui-state-focus,
+    .ui-widget-header .ui-state-hover {
         color: #444 !important;
     }
 
