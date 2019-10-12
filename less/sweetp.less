@@ -102,9 +102,9 @@ a:focus {
 }
 
 .chats-full [component="chat/header"] [data-action=close] {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 55px;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: -0.25em;
 }
 
 #sweetp-wrapper {
@@ -405,7 +405,9 @@ input::-webkit-credentials-auto-fill-button:hover {
 }
 
 select#filter-cid,
-select#filter-cid :hover {
+select#filter-cid :hover,
+select[multiple],
+select[multiple]:hover {
     background-image: none !important;
 }
 
@@ -600,6 +602,11 @@ textarea,
     textarea.form-control,
     .bootstrap-tagsinput {
         padding-left: 5px !important;
+    }
+
+    .chat-modal {
+        padding-top: 116px !important;
+        background-color: #444;
     }
 
     .header .chat-list,
