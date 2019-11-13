@@ -236,6 +236,12 @@ a:focus {
     z-index: 10000;
 }
 
+.checkbox input[type=checkbox]:checked:before,
+.checkbox-inline input[type=checkbox]:checked:before,
+input[type=checkbox]:checked:before {
+    left: 11px;
+}
+
 .checkbox input[type=checkbox]:checked:after,
 .checkbox-inline input[type=checkbox]:checked:after,
 input[type=checkbox]:checked:after {
@@ -574,6 +580,12 @@ textarea,
     .btn-group .btn-link:focus,
     .btn-group .btn-link:hover {
         color: #444 !important;
+    }
+
+    .btn-link:active:hover,
+    .btn-link:hover,
+    .btn-link:focus {
+        background-color: rgba(240, 240, 240, 0.5);
     }
 
     .composer .formatting-bar .formatting-group li:focus,
