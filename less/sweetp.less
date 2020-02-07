@@ -286,6 +286,16 @@ a:focus {
     z-index: 10000;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 .checkbox input[type=checkbox]:checked:before,
 .checkbox-inline input[type=checkbox]:checked:before,
 input[type=checkbox]:checked:before {
@@ -376,6 +386,10 @@ a.linkopacity:hover img {
 @media (max-width: 991px) {
     html.composing .composer {
         padding-top: 116px;
+    }
+
+    .account {
+        margin-bottom: 4em;
     }
 }
 
