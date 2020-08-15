@@ -7,12 +7,20 @@ body {
     position: relative;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 700;
 }
 
 .categories h2.title {
     font-size: 26px !important;
+}
+
+.categories h2.title a,
+.categories h2.title a:link,
+.categories h2.title a:focus,
+.categories h2.title a:visited {
+    color: #444 !important;
 }
 
 a {
@@ -305,8 +313,10 @@ input[type="submit"],
     border-radius: 0;
 }
 
-.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], input[type=checkbox] {
-	margin-right: 10px
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+input[type=checkbox] {
+    margin-right: 10px
 }
 
 .checkbox input[type=checkbox]:checked:before,
@@ -622,6 +632,13 @@ textarea,
     #sweetp-wrapper {
         background-color: #444 !important;
         color: #e4e4e4;
+    }
+
+    .categories h2.title a,
+    .categories h2.title a:link,
+    .categories h2.title a:focus,
+    .categories h2.title a:visited {
+        color: #e4e4e4 !important;
     }
 
     .composer {
