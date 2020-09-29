@@ -43,7 +43,8 @@ a:focus {
 }
 
 #panel {
-    padding: 2em 0;
+    padding-top: 2em;
+    padding-bottom: 2em;;
 }
 
 #panel .navbar {
@@ -167,6 +168,14 @@ a:focus {
     .chat-modal [component="chat/composer"],
     .chats-full [component="chat/composer"] {
         margin-bottom: 50px;
+    }
+
+    html.composing .composer {
+        padding-top: 116px;
+    }
+
+    .account {
+        margin-bottom: 4em;
     }
 }
 
@@ -408,15 +417,6 @@ a.linkopacity:hover img {
 }
 
 /* end linkopacity */
-@media (max-width: 991px) {
-    html.composing .composer {
-        padding-top: 116px;
-    }
-
-    .account {
-        margin-bottom: 4em;
-    }
-}
 
 input::-webkit-contacts-auto-fill-button:hover {
     background: #428c46 !important;
@@ -610,6 +610,10 @@ textarea,
 
     .categories>li, .category>ul>li {
         border-top: 1px solid rgba(238, 238, 238, 0.3);
+    }
+
+    .categories>li:last-child, .category>ul>li:last-child {
+        border-bottom: 1px solid rgba(238, 238, 238, 0.3);
     }
 }
 
