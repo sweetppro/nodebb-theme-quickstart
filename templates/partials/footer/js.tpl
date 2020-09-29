@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+<script>
+    document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 
 function theDomHasLoaded(e) {
     var today = new Date();
@@ -6,3 +7,4 @@ function theDomHasLoaded(e) {
 
     document.getElementById('sweetp-footer').innerHTML = '<p>Copyright &copy; ' + yyyy + ' <a href="https://sweetpproductions.com">SweetP Productions, Inc.</a> All rights reserved.</p>';
 };
+</script>
