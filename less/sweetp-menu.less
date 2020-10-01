@@ -17,7 +17,7 @@ label .title a {
 
 label .title a::before {
     content: '';
-    background: url('https://sweetpproductions.com/gfx/sweetp_logo_dark.png') no-repeat;
+    background: url('https://sweetpproductions.com/gfx/sweetp_logo.svg') no-repeat;
     background-size: 100% 100%;
     width: 24px;
     height: 30px;
@@ -25,6 +25,7 @@ label .title a::before {
     float: left;
     margin: 0 5px 0 0;
     z-index: 9000;
+    filter: brightness(0) saturate(100%) invert(23%) sepia(0%) saturate(240%) hue-rotate(245deg) brightness(101%) contrast(83%);
 }
 
 label .sweetp-hamburger-menu {
@@ -223,15 +224,7 @@ label ul a:hover {
 /* dark theme */
 @media (prefers-color-scheme: dark) {
     label .title a::before {
-        content: '';
-        background: url('https://sweetpproductions.com/gfx/sweetp_logo.png') no-repeat;
-        background-size: 100% 100%;
-        width: 24px;
-        height: 30px;
-        display: block;
-        float: left;
-        margin: 0 5px 0 0;
-        z-index: 9000;
+        filter: brightness(0) saturate(100%) invert(99%) sepia(10%) saturate(33%) hue-rotate(71deg) brightness(103%) contrast(79%);
     }
 
     label a,
