@@ -606,6 +606,19 @@ textarea,
     .category>ul>li:last-child {
         border-bottom: 1px solid rgba(238, 238, 238, 0.3);
     }
+
+    @media (prefers-color-scheme: dark) {
+
+        .categories>li,
+        .category>ul>li {
+            border-top: 1px solid rgba(40, 40, 40, 0.2);
+        }
+
+        .categories>li:last-child,
+        .category>ul>li:last-child {
+            border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+        }
+    }
 }
 
 @media screen and (max-width: 530px) {
