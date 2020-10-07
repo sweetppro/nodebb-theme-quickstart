@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-sweetp",
-  "version": "0.0.3",
+  "version": "0.1",
   "description": "SweetP Productions Support forum NodeBB theme",
   "main": "theme.less",
   "keywords": [
