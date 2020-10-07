@@ -5,7 +5,7 @@
 {{{end}}}
 
 <script>
-    window.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
         var today = new Date();
         var yyyy = today.getFullYear();
 
