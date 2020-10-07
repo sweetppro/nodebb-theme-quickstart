@@ -20,6 +20,10 @@
     "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
   },
   "nbbpm": {
-    "compatibility": "^1.11.0"
+    "compatibility": "^1.14.0"
+  },
+  "dependencies": {
+    "pulling": "^2.0.0",
+    "striptags": "^3.1.1"
   }
 }
