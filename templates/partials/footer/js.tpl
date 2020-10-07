@@ -1,7 +1,7 @@
-<script defer src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
+<script src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
 
 {{{each scripts}}}
-<script type="text/javascript" src="{scripts.src}"></script>
+<script defer type="text/javascript" src="{scripts.src}"></script>
 {{{end}}}
 
 <script>
