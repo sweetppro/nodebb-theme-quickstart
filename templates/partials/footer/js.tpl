@@ -5,29 +5,16 @@
 {{{end}}}
 
 <script>
-if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', prepareFooter);
-    } else {
-        prepareFooter();
-    }
-    function prepareFooter() {
-        require(['forum/footer']);
-        <!-- IF useCustomJS -->
-        {{customJS}}
-        <!-- ENDIF useCustomJS -->
-        $(document).ready(function () {
-            ajaxify.coldLoad();
-        });
-    }
+ 	window.addEventListener('DOMContentLoaded', function () {
+ 		require(['forum/footer']);
 
-    $(document).ready(function () {
-        ajaxify.coldLoad();
-    });
+ 		<!-- IF useCustomJS -->
+		{{customJS}}
+ 		<!-- ENDIF useCustomJS -->
 
-    document.addEventListener("DOMContentLoaded", function () {
         var today = new Date();
         var yyyy = today.getFullYear();
 
         document.getElementById('sweetp-footer').innerHTML = '<p>Copyright &copy; ' + yyyy + ' <a href="https://sweetpproductions.com">SweetP Productions, Inc.</a> All rights reserved.</p>';
-    });
+ 	});
 </script>
