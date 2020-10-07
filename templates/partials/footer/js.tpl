@@ -5,12 +5,10 @@
 {{{end}}}
 
 <script>
-    document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+    window.addEventListener("DOMContentLoaded", function () {
+        var today = new Date();
+        var yyyy = today.getFullYear();
 
-function theDomHasLoaded(e) {
-    var today = new Date();
-    var yyyy = today.getFullYear();
-
-    document.getElementById('sweetp-footer').innerHTML = '<p>Copyright &copy; ' + yyyy + ' <a href="https://sweetpproductions.com">SweetP Productions, Inc.</a> All rights reserved.</p>';
-};
+        document.getElementById('sweetp-footer').innerHTML = '<p>Copyright &copy; ' + yyyy + ' <a href="https://sweetpproductions.com">SweetP Productions, Inc.</a> All rights reserved.</p>';
+    };
 </script>
