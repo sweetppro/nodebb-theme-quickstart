@@ -221,6 +221,7 @@ a:focus {
 
 .btn {
     margin-top: 0.5em;
+    box-shadow: none !important;
 }
 
 .composer-container .btn,
@@ -230,6 +231,11 @@ a:focus {
 
 .composer .mobile-navbar .title {
     color: #fff;
+}
+
+.composer {
+    border-radius: 10px;
+    padding: 20px;
 }
 
 /* fix search button */
@@ -304,7 +310,7 @@ a:focus {
 
 .btn-primary:active,
 .btn-info:active {
-    background-image: radial-gradient(circle, #428c46 10%, #327635 11%) !important;
+    background-image: none !important;
 }
 
 .composer .mobile-navbar {
@@ -733,6 +739,10 @@ textarea,
     textarea.form-control,
     .bootstrap-tagsinput {
         padding-left: 5px !important;
+    }
+
+    .composer .tags-container {
+        margin: 15px;
     }
 
     .chat-modal {
