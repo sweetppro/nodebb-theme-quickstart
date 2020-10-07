@@ -21,7 +21,7 @@
         "bootstrap",
         "responsive"
     ],
-    "license": "BSD-2-Clause",
+    "license": "MIT",
     "dependencies": {
         "pulling": "^2.0.0",
         "striptags": "^3.1.1"
