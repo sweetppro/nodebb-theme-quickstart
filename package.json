@@ -1,29 +1,29 @@
 {
-  "name": "nodebb-theme-sweetp",
-  "version": "0.0.3",
-  "author": {
-    "name": "Russell Gray",
-    "url": "https://sweetpproductions.com"
-  },
-  "nbbpm": {
-    "compatibility": "^1.14.0"
-  },
-  "description": "SweetP Productions Support forum NodeBB theme",
-  "main": "theme.less",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
-  },
-  "keywords": [
-    "nodebb",
-    "theme",
-    "forum",
-    "bootstrap",
-    "responsive"
-  ],
-  "license": "BSD-2-Clause",
-  "dependencies": {
-    "pulling": "^2.0.0",
-    "striptags": "^3.1.1"
-  }
+    "name": "nodebb-theme-sweetp",
+    "version": "0.1.0",
+    "author": {
+        "name": "Russell Gray",
+        "url": "https://sweetpproductions.com"
+    },
+    "nbbpm": {
+        "compatibility": "^1.14.0"
+    },
+    "description": "SweetP Productions Support forum NodeBB theme",
+    "main": "theme.less",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sweetppro/nodebb-theme-sweetp"
+    },
+    "keywords": [
+        "nodebb",
+        "theme",
+        "forum",
+        "bootstrap",
+        "responsive"
+    ],
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "pulling": "^2.0.0",
+        "striptags": "^3.1.1"
+    }
 }
