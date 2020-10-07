@@ -190,6 +190,11 @@ body.page-compose {
 
     html.composing .composer {
         padding-top: 116px;
+        z-index: 10000 !important;
+    }
+
+    .composer .tags-container .bootstrap-tagsinput input {
+        width: 100% !important;
     }
 
     .account {
@@ -693,7 +698,15 @@ textarea,
     }
 
     .composer .formatting-bar .formatting-group li {
-        padding: 10px 14px !important;
+        padding: 10px 13px !important;
+    }
+
+    .composer .formatting-bar .formatting-group {
+        margin: auto 0 0 4px !important;
+    }
+
+    .write-container {
+        margin: 0 15px !important;
     }
 }
 
