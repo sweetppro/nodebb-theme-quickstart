@@ -17,10 +17,10 @@
 		"../nodebb-theme-persona/lib/modules/quickreply.js"
 	],
 	"modules": {
-		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
+		"pulling.js": "../pulling/build/pulling-drawer.js"
 	},
 	"acpScripts": [
 		"../nodebb-theme-persona/lib/admin.js"
 	],
-	"languages": "languages"
+	"languages": "../nodebb-theme-persona/languages"
 }
