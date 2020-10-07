@@ -7,6 +7,8 @@
 <script>
 require(['forum/footer']);
  	window.addEventListener('DOMContentLoaded', function () {
+ 		require(['forum/footer']);
+
  		<!-- IF useCustomJS -->
 		{{customJS}}
  		<!-- ENDIF useCustomJS -->
