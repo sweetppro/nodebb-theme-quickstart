@@ -20,6 +20,8 @@
       <div class="hide">
       <!-- IMPORT 500-embed.tpl -->
       </div>
+
+      <!-- IMPORT partials/footer/js.tpl -->
       
     </div>
     <div id="sweetp-footer"></div>
