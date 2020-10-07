@@ -20,7 +20,7 @@
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
 	},
 	"acpScripts": [
-		"public/admin.js"
+		"../nodebb-theme-persona/public/admin.js"
 	],
 	"languages": "languages"
 }
