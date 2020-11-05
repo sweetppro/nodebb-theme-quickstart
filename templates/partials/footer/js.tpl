@@ -16,6 +16,7 @@
         document.addEventListener('DOMContentLoaded', prepareFooter);
     } else {
         prepareFooter();
+        fixHomeMargin();
     }
 
     function prepareFooter() {
@@ -27,5 +28,14 @@
         $(document).ready(function () {
             ajaxify.coldLoad();
         });
+    }
+
+    function fixHomeMargin() {
+        var elements = document.getElementsByClassName("breadcrumb");
+        if elements.length == 0 {
+            var title = document.getElementsByClassName("categories-title")[0];
+            title.classList.add("padTop")
+        }
+
     }
 </script>
