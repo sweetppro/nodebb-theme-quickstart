@@ -13,8 +13,12 @@
  	});
 
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', prepareFooter);
+        document.addEventListener('DOMContentLoaded', runTasks);
     } else {
+        runTasks();
+    }
+
+    function runTasks() {
         prepareFooter();
         fixHomeMargin();
     }
@@ -34,8 +38,7 @@
         var elements = document.getElementsByClassName("breadcrumb");
         if elements.length == 0 {
             var title = document.getElementsByClassName("categories-title")[0];
-            title.classList.add("padTop")
+            title.classList.add("padTop");
         }
-
     }
 </script>
