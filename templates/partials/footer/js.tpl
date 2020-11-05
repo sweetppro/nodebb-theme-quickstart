@@ -6,6 +6,8 @@
 
 <script>
     window.addEventListener('DOMContentLoaded', function () {
+        fixHomeMargin();
+
         var today = new Date();
         var yyyy = today.getFullYear();
 
@@ -13,14 +15,9 @@
  	});
 
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', runTasks);
+        document.addEventListener('DOMContentLoaded', prepareFooter);
     } else {
-        runTasks();
-    }
-
-    function runTasks() {
         prepareFooter();
-        fixHomeMargin();
     }
 
     function prepareFooter() {
