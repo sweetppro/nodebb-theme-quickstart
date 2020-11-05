@@ -13,6 +13,8 @@
 		};
 	</script>
 
+    <!-- IMPORT sweetp_js.tpl -->
+
 	<!-- IF useCustomHTML -->
 	{{customHTML}}
 	<!-- END -->
