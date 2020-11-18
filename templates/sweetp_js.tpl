@@ -3,7 +3,7 @@
             
         /* fix margins on homepage */
         var elements = document.getElementsByClassName("breadcrumb");
-        if (elements.length != 0) {
+        if (elements.length == 0) {
             var title = document.getElementsByClassName("categories-title")[0];
             title.classList.add("padTop");
         }
