@@ -4,8 +4,11 @@
         /* fix margins on homepage */
         var elements = document.getElementsByClassName("breadcrumb");
         if (elements.length == 0) {
-            var title = document.getElementsByClassName("categories-title")[0];
-            title.classList.add("padTop");
+            var titles = document.getElementsByClassName("categories-title");
+            if (titles.length > 0) {
+                var title = titles[0];
+                title.classList.add("padTop");
+            }
         }
 
         /* fix footer */
