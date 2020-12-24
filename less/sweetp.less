@@ -667,6 +667,7 @@ textarea,
 
 .topic .topic-header {
     top: 110px !important;
+    z-index: 100 !important;
 }
 
 .topic-list-header {
@@ -695,6 +696,16 @@ textarea,
 
 .post-queue .fa-stack {
     display: none !important;
+}
+
+.topic .pagination-block,
+.topic .pagination-block .progress-bar {
+    border-radius: 8px 0 0 8px;
+}
+
+.topic .pagination-block .pagination-text {
+    color: #333 !important;
+    top: 0 !important;
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -1206,5 +1217,9 @@ textarea,
 
     .quick-search-container .quick-search-results li a {
         color: #e4e4e4
+    }
+
+    .topic .pagination-block .wrapper .dropdown-menu {
+        color: #e4e4e4 !important;
     }
 }
